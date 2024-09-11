@@ -1,0 +1,397 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    overflow: auto;
+    background-image: url(Untitled\ design.png);
+    /* background-color: #65938e; */
+    /* background-image:linear-gradient( #289f8a,#19907b, #f8f8f8); */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3,h6{
+    animation: slideIn 1.5s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.logoweb {
+    width: 12rem;
+    height: 2.75rem;
+    margin-right: 2rem;
+}
+
+.navbar {
+    font-family: "lato", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-weight: bold;
+
+}
+
+.nav-link {
+    font-family: "Lato", sans-serif;
+    color: #0a5043;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    /* height: 1rem; */
+    width: 6rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+
+
+}
+
+.nav-link:hover {
+    background-color: #19907b;
+    color: white;
+    border: 2px solid #19907b;
+    border-radius: 7px;
+
+}
+
+.search-bar-2 {
+    width: 100%;
+    max-width: 42rem;
+    align-items: center;
+    display: flex;
+    align-content: flex-end;
+    border-radius: 5rem;
+    padding: 0.6rem 1.25rem;
+    background-color: rgb(216, 243, 235);
+    justify-content: space-between;
+
+}
+
+.search-bar {
+    max-width: 42rem;
+    width: 100%;
+    margin-right: 2rem;
+}
+
+.search-bar input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    border-radius: 5rem;
+    outline: #19907b;
+    /* padding: 0.25rem 0.1rem; */
+    color: black;
+    font-size: 1rem;
+    max-width: 100%;
+
+}
+
+.sign-up {
+    font-family: "Lato", sans-serif;
+    background-color: #D9D9D9;
+    border: 2px solid ;
+    padding: 0.5rem 0.45rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border: #aadbd3;
+
+}
+
+.sign-up:hover {
+    background-color: #19907b;
+    color: white;
+    border: 2px solid #19907b;
+}
+
+.search-btn {
+    height: 1.5rem;
+    width: 1.5rem;
+    flex-direction: row;
+
+}
+
+.know-more {
+    font-family: "Lato", sans-serif;
+    background-color: #D9D9D9;
+    padding: 0.35rem 0.3rem;
+    font-size: 1rem;
+    height: 2rem;
+    width: 7rem;
+    border: #19907b;
+    border-radius: 10px ;
+    margin-top: 1.25rem;
+    color: #023f34;
+
+
+}
+
+.know-more:hover{
+    background-color: #19907b;
+    color: white;
+    border: 2px solid #19907b;
+}
+
+.know-more a {
+    text-decoration: none;
+    font-weight: 300px;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.navbar .features:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+
+.why-medtrack {
+    background-color:  #19907b;
+    height: 800px;
+    /* padding: 2rem 1rem 2rem 4rem; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.why-medtrack h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    /* margin: 1rem 0 1rem 1rem; */
+
+    color: #aadbd3;
+}
+
+.fa-regular {
+    margin-right: 10px;
+}
+
+.why-medtrack h3 {
+    font-family: "Poppins", sans-serif;
+    color: #f8f9fa;
+    font-size: 3rem;
+    /* margin: -2.5rem 1rem 0; */
+    font-weight: 1rem;
+    font-style: normal;
+    
+}
+
+
+
+.why-medtrack-content {
+    max-width: 1200px;
+    margin: 0;
+    width: 100%;
+    padding: 0 ;
+    margin-bottom: 1rem;
+}
+
+.why-medtrack h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: -2rem;
+    color: #aadbd3;
+}
+
+.why-medtrack h3 {
+    font-family: "Poppins", sans-serif;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.cards-container {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin-top: -3rem ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-self: center;
+}
+
+.card {
+    background-color:#5ac1af;
+    width: calc(33.333% - 2rem);
+    min-width: 315px;
+    height: 180px;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+
+
+.card-title {
+    color: #f8f9fa;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card-info {
+    color: #f8f9fa;
+    font-style: normal;
+    margin: 0;
+    flex-grow: 1;
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .why-medtrack {
+        padding: 3rem 1rem;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}
+
+.stats-section {
+    font-family: "Lato", sans-serif;
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.stats-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #19907b;
+    font-family: "Lato", sans-serif;
+
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    flex: 1 1 200px;
+    margin: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #19907b;
+    margin-bottom: 0.5rem;
+    font-family: "Lato", sans-serif;
+}
+
+.stat-item p {
+    font-size: 2rem;
+    color: #19907b;
+    font-family: "Lato", sans-serif;
+    
+}
+
+@media (max-width: 768px) {
+    .stat-item {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-item {
+        flex-basis: 100%;
+    }
+}
+
+.footer {
+    font-family: "Lato", sans-serif;
+    margin-left: 4rem;
+    align-items: left;
+    height: 200px;
+    padding-left: 2.5rem;
+}
+
+.footer h2 {
+    color: #0a5043;
+    /* margin-left: 4rem; */
+}
+
+.fa-instagram,
+.fa-twitter,
+.fa-discord,
+.fa-linkedin {
+    font-size: 2.5rem;
+    color: #0a5043;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0.75rem;
+
+
+
+
+
+}
+
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-discord:hover,
+.fa-linkedin:hover {
+    background-color: white;
+    border-radius: 60%;
+
+}
+
+.fa-notes-medical {
+    font-size: 2rem;
+    align-items: center;
+}

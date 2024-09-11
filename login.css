@@ -1,0 +1,95 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #68B2A0; /* Light teal background */
+}
+
+/* Container for login form */
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2C6875;  /* Dark teal/blue color for the heading */
+}
+
+/* Styling input groups */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels styling */
+.input-group label {
+    font-size: 14px;
+    color: #2C6875;  /* Dark teal/blue for labels */
+}
+
+/* Input fields styling */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Input hover and focus effects */
+.input-group input:focus {
+    border-color: #2C6875;  /* Dark teal focus color */
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2C6875;  /* Dark teal background for button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #005960;  /* Slightly darker teal on hover */
+}
+
+/* Signup link styling */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p a {
+    color: #2C6875;  /* Dark teal for the sign-up link */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
