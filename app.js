@@ -1,9 +1,6 @@
 // Function to animate counting up to a target number
 function animateValue(id, start, end, duration, plusSign = false) {
     let current = start;
- // Function to animate counting up to a target number
-function animateValue(id, start, end, duration, plusSign = false) {
-    let current = start;
     const range = end - start;
     const increment = end > start ? Math.ceil(range / (duration / 16)) : Math.floor(range / (duration / 16));
     const stepTime = 16; // 60 fps
