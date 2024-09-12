@@ -76,7 +76,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
     triggerAnimations();  // Trigger animations when the page loads
 });
 
-// Run animations when the user scrolls
-window.addEventListener('scroll', () => {
-    triggerAnimations();  // Trigger animations on scroll
-});
