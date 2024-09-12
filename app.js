@@ -36,10 +36,47 @@ function animateRating(id, start, end, duration) {
     }, stepTime);
 }
 
-// Animate stats when the page loads
+// Helper function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to trigger animations when elements are in the viewport
+function triggerAnimations() {
+    const userCountElement = document.getElementById('userCount');
+    const ratingElement = document.getElementById('rating');
+    const hospitalsElement = document.getElementById('hospitals');
+    const inventoryItemsElement = document.getElementById('inventoryItems');
+
+    if (isInViewport(userCountElement)) {
+        animateValue("userCount", 0, 50000, 1000, true);
+    }
+
+    if (isInViewport(ratingElement)) {
+        animateRating("rating", 0, 4.8, 1000);
+    }
+
+    if (isInViewport(hospitalsElement)) {
+        animateValue("hospitals", 0, 500, 1000, true);
+    }
+
+    if (isInViewport(inventoryItemsElement)) {
+        animateValue("inventoryItems", 0, 1000000, 1000, true);
+    }
+}
+
+// Run animations on page load
 document.addEventListener('DOMContentLoaded', (event) => {
-    animateValue("userCount", 0, 50000, 1000, true);
-    animateRating("rating", 0, 4.8, 1000);
-    animateValue("hospitals", 0, 500, 1000, true);
-    animateValue("inventoryItems", 0, 1000000, 1000, true);
+    triggerAnimations();  // Trigger animations when the page loads
+});
+
+// Run animations when the user scrolls
+window.addEventListener('scroll', () => {
+    triggerAnimations();  // Trigger animations on scroll
 });
